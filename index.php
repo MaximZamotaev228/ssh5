@@ -338,9 +338,9 @@ else {
     setcookie('pass', $password);
 
     try {
-    $user = 'u52877'; 
-    $pass = '5248088';
-    $db = new PDO ("mysql:host=localhost;dbname=u52877", $user, $pass, [PDO::ATTR_PERSISTENT => true, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+    $user = 'u52876'; 
+    $pass = '9106944';
+    $db = new PDO ("mysql:host=localhost;dbname=u52876", $user, $pass, [PDO::ATTR_PERSISTENT => true, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
     $stmt = $db->prepare("INSERT INTO info VALUES(NULL, :fname, :email ,:bdate,:gender,:limb,:biography)");
 
     $stmt->bindParam(':fname',$_POST['name']);
