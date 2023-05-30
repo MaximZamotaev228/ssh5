@@ -65,9 +65,9 @@ else {
 
   // TODO: Проверть есть ли такой логин и пароль в базе данных.
   // Выдать сообщение об ошибках.
-  $user = 'u52877'; 
-  $pass = '5248088';
-  $db = new PDO ("mysql:host=localhost;dbname=u52877", $user, $pass, [PDO::ATTR_PERSISTENT => true, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+  $user = 'u52876'; 
+  $pass = '9106944';
+  $db = new PDO ("mysql:host=localhost;dbname=u52876", $user, $pass, [PDO::ATTR_PERSISTENT => true, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
   $login = $_POST['login'];
   $password = md5($_POST['pass']);
   $stmt = $db->query("SELECT id from log where logi='".$login."'"." and pass='".$password."'")->fetch();
